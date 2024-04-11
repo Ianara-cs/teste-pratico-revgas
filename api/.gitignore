@@ -1,0 +1,8 @@
+node_modules
+
+.env
+
+docker-compose.yml
+
+dados_mysql-volume
+mysql-volume
