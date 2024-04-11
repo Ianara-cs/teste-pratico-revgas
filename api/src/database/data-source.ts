@@ -1,5 +1,6 @@
 import { DataSource, DataSourceOptions } from "typeorm";
 import dotenv from 'dotenv';
+import { Banco } from "../entity/banco";
 
 dotenv.config()
 
@@ -12,7 +13,7 @@ const localOrmConfig: DataSourceOptions = {
     database:  process.env.MYSQL_DB,
     synchronize: false,
     logging: false,
-    entities: [],
+    entities: [Banco],
     migrations: [`${__dirname}/**/**/migrations/*.{ts,js}`],
     subscribers: [],
 
