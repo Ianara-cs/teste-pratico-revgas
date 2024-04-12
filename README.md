@@ -2,6 +2,8 @@
 
 Este é um projeto de teste prático para a empresa RevGas, que contém as partes da API e da aplicação web.
 
+Na API foi usado Express com Typeorm e Typescript e na aplicação web foi usado o React com Typescript.
+
 ## Instalação
 
 Certifique-se de ter o Node.js e o npm instalados em seu sistema. Em seguida, siga estas etapas para iniciar o projeto:
