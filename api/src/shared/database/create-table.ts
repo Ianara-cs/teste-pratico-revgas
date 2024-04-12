@@ -1,18 +1,6 @@
 import { createConnection } from "./data-source";
-import {WorkSheet, readFile, utils} from 'xlsx'
-import path from 'path'
 
-type Data = {
-    'Código de compensação': number,
-    'Nome Instituição': string
-}
-
-const filePath = path.join(__dirname, 'bancos.xlsx');
-
-const workbook = readFile(filePath);
-const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-const data: Data[] = utils.sheet_to_json(worksheet);
-
+// Esse código tem a funcionalidade de criar a tabela 'bancos' para depois fazer a inserção dos dados.
 
 async function create() { 
     const connection = await createConnection()

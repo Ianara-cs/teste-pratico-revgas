@@ -2,6 +2,8 @@ import { createConnection } from "./data-source";
 import {WorkSheet, readFile, utils} from 'xlsx'
 import path from 'path'
 
+// Esse código tem a funcionalidade de inserir dados que vem de um arquivo execel para o banco de dados
+
 type Data = {
     'Código de compensação': number,
     'Nome Instituição': string

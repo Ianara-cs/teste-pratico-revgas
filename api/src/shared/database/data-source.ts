@@ -4,6 +4,8 @@ import { Banco } from "../../modules/banco/entity/banco";
 
 dotenv.config()
 
+// Esse código faz a conexão com o banco de dados usando o typeorm
+
 const localOrmConfig: DataSourceOptions = {
     type: 'mysql',
     host: process.env.MYSQL_HOST,

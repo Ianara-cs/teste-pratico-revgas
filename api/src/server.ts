@@ -6,7 +6,7 @@ import { BancoController } from './modules/banco/controllers/bancosController'
 import { errorMiddleware } from './shared/errors/errorMiddleware'
 import cors from 'cors'
 
-createConnection()
+createConnection() // Criar a conexão com o banco de dados
 const app = express()
 
 app.use(express.json())
@@ -20,7 +20,7 @@ const bancosController = new BancoController()
 app.get("/bancos", bancosController.obterTodosOsBancos)
 app.get("/bancos/:cod", bancosController.ObterBancoPorCodigo)
 
-app.use(errorMiddleware)
+app.use(errorMiddleware) // tratramento de erros
 
 const port = 5000
 
