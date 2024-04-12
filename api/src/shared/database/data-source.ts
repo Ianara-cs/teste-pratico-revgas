@@ -1,6 +1,6 @@
 import { DataSource, DataSourceOptions } from "typeorm";
 import dotenv from 'dotenv';
-import { Banco } from "../entity/banco";
+import { Banco } from "../../modules/banco/entity/banco";
 
 dotenv.config()
 

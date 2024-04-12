@@ -1,8 +1,8 @@
 import { inject, injectable } from "tsyringe";
 import { IBancosRepository } from "../repository/IBancosRepository";
 import { Banco } from "../entity/banco";
-import { INJECT } from "../shared/container";
-import { NotFoundException } from "../errors/AppErrors";
+import { INJECT } from "../../../shared/container";
+import { NotFoundException } from "../../../shared/errors/AppErrors";
 
 @injectable()
 export class BancosService {
